@@ -1,3 +1,40 @@
+<style>
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E0F7FA;;
+    padding: 10px;
+    border-radius:25px;
+    box-shadow: 5px 5px 19px 5px;
+
+    
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+ button{
+    border-radius:25px;
+    padding: 10px;
+    background-color: cyan;
+    cursor: pointer;
+  }
+
+  button:hover{ 
+    background-color: white;
+    
+  }
+</style>
 <h2>Upload a File</h2>
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
